@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    background-color: #7f7f68;
+}
+div{
+    /* para agregar diseño al html utilizo el archivo css y lo vinculo por el head del html*/
+    padding: 20px;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #9e9e9e;
+}
+nav{
+    background-color: #454545;
+    display: flex;
+    flex-direction: row;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    margin: 20px;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;  /* para sacar el subrayado de los hipervinculos */
+    color: black;
+}
+nav img{
+    width: 8vw;
+    height: auto;
+}
+
+.menubuttons{
+    background-color: #bab590;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    background-image: url("https://www.tooltyp.com/8-beneficios-de-usar-imagenes-en-nuestros-sitios-web/");
+}
+nav a:hover{
+    color: #ce1111;  /* para cambiar el color de los hipervinculos al pasar el mouse */
+}
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: #7e7e7e;
+}
+#main button{
+    background-color: #585858;
+}
