@@ -6,8 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<link rel="stylesheet" href="styles.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+
 <style>
 body, html {
   height: 100%;
@@ -31,40 +32,55 @@ body, html {
 <!-- Links (sit on top) -->
 <div class="w3-top">
   <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">INICIO</a>
+    <div class="w3-col s2">
+      <a href="index.html" class="w3-button w3-block w3-black">INICIO</a>
     </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">VEHICULOS</a>
+    <div class="w3-col s2">
+      <a href="vehiculos.html" class="w3-button w3-block w3-black">VEHICULOS</a>
     </div>
-    <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">SERVICIOS</a>
+    <div class="w3-col s2">
+      <a href="vende_tu_auto.html" class="w3-button w3-block w3-black">VENDE TU AUTO</a>
     </div>
-    <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">CONTACTO</a>
+    <div class="w3-col s2">
+      <a href="servicio_mecanico.html" class="w3-button w3-block w3-black">SERVICIO MECANICO</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="seguros.html" class="w3-button w3-block w3-black">SEGUROS</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="contacto.html" class="w3-button w3-block w3-black">CONTACTO</a>
     </div>
   </div>
 </div>
 
 <!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" width="100%" height="10%" id="ImagenFondo">
-    <img class="mySlides" src="assets/IMG_4442-1200x480.jpeg" width="100%" height="">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Abierto de 9:00 a 18:00hs</span>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/SLS (1).png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/fondoAMG.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/porsche-6607502_1920-1200x480.png" class="d-block w-100" alt="...">
+    </div>
   </div>
-  <div class="w3-display-middle w3-center">
-    <span class="w3-center w3-padding-64" style="color: rgb(52, 52, 52); font-size:90px">GT<br>AUTOMOTORES</span>
-  </div>
-  <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">Av. del Libertador 3120, Olivos, Bs As.</span>
-  </div>
-</header>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 <!-- Add a background color and large text to the whole page -->
 <div class="w3-sand w3-grayscale w3-large">
 
 <!-- About Container -->
-<div class="w3-container" id="about" style="color: #000000" >
+<div class="w3-container" id="vehiculos" style="color: #000000" >
   <div class="w3-content" style="max-width:1000px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">VEHICULOS</span></h5>
     <div class="gallery">
@@ -173,121 +189,116 @@ body, html {
 </div>
 
 <!-- Menu Container -->
-<div class="w3-container" id="menu">
+<div class="w3-container" id="servicios">
   <div class="w3-content" style="max-width:2000px">
  
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Servicios</span></h5>
   
     <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Seguros');" id="myLink">
-        <div class="w3-col s6 tablink">Seguros</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Asesoramiento');">
-        <div class="w3-col s6 tablink">Asesoramiento</div>
-      </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Financiacion');" id="myLink">
         <div class="w3-col s6 tablink">Financiacion</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Vende tu auto');">
+        <div class="w3-col s6 tablink">Vende tu auto</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Seguros');" id="myLink">
+        <div class="w3-col s6 tablink">Seguros</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Consignacion');" id="myLink">
         <div class="w3-col s6 tablink">Consignacion</div>
       </a>
     </div>
 
-    <div id="Seguros" class="w3-container menu w3-padding-48 w3-card">
-        <input class="form-control form-control-lg" type="text" placeholder="Modelo del vehiculo" aria-label=".form-control-lg example">
-        <input class="form-control" type="text" placeholder="Domicilio" aria-label="default input example">
-        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
-    </div>
-
-    <div id="Asesoramiento" class="w3-container menu w3-padding-48 w3-card">
-        <p class="w3-text-grey"> </p><br>
+    <div id="Vende tu auto" class="w3-container menu w3-padding-48 w3-card">
         <div class="mb-3">
-            <h5 class="w3-text-grey" style="text-align: cent;"> COMPRA</h5><br>
-            <p class="w3-text-grey"> Nos encargamos de llevar a cabo los tramites de compra del vehiículo con el fin de que puedas retirar el vehículo lo antes posible </p><br>
-            <h5 class="w3-text-grey" style="text-align: cent;"> VENTA</h5><br>
-            <p class="w3-text-grey"> Te asesoramos para que prepares la documentación para simplificarte los pasos para que concretes una venta rápida y segura con nosotros. </p><br>
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="button" class="btn btn-outline-dark">Enviar</button>
-      </div>
-
-      <div id="Financiacion" class="w3-container menu w3-padding-48 w3-card">
-        <h5>Bread Basket</h5>
-        <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-      
-        <h5>Honey Almond Granola with Fruits</h5>
-        <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-      
-        <h5>Belgian Waffle</h5>
-        <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-      
-        <h5>Scrambled eggs</h5>
-        <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-      
-        <h5>Blueberry Pancakes</h5>
-        <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
-      </div>
-
-    <div id="Consignacion" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
-    
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-    
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-    
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-    
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-    </div>  
+            <h5 class="w3-text-grey" style="text-align: cent;"> 
+                El proceso de alta en nuestro sistema de consignación virtual es muy sencillo:</h5><br>
+            <p class="w3-text-grey">  1.  Nos enviás estos datos primarios con fotos actuales de tu unidad.<br>
+                2.  Evaluamos el estado, la cotización de mercado y nos comunicamos con vos para coordinar una visita de verificación.<br>
+                3.  Listo, nos encargamos de ubicar tu unidad en Tiempo Record! </p><br>
+            <div class="row align-items-stretch justify-content-center no-gutters">
+                <div class="col-md-7">
+                    <div class="form h-100 contact-wrap p-5">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Apellido </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombreapellido@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Telefono </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1122334455">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Dominio/Patente </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Marca </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Modelo </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ford">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Año de compra </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="2020">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Kilometros </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="111111111">
+                    </div>
+                    
+                </div>
+              </div>
+    </div>
+    </div>
   </div>
 </div>
 
 <!-- Contact/Area Container -->
-<div class="w3-container" id="where" style="padding-bottom:32px;">
+<div class="w3-container" id="contacto" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Contactanos</span></h5>
-    <p>Nos podes encontrar en: </p>
-    <a  class="btn btn-outline-secondary" href="https://www.instagram.com/gt_automotores/" >
-        <img src="assets/instagram.svg" class="w3-image" style="width:300%" >
-    </a> Instagram
-    <a  class="btn btn-outline-secondary" href="https://www.google.com/maps/place/Gt+automotores/@-34.5012624,-58.4827126,15z/data=!4m5!3m4!1s0x0:0x62e873047dfe4fdb!8m2!3d-34.5012534!4d-58.4826908" >
-        <img src="assets/pin-map.svg" class="w3-image" style="width:300%" >
-    </a> Sucursal Olivos
-    <a  class="btn btn-outline-secondary" href="https://www.google.com/maps/place/Gt+automotores/@-34.5012624,-58.4827126,15z/data=!4m5!3m4!1s0x0:0x62e873047dfe4fdb!8m2!3d-34.5012534!4d-58.4826908" >
-        <img src="assets/pin-map.svg" class="w3-image" style="width:300%" >
-    </a> Sucursal Liniers         
-    <a  class="btn btn-outline-secondary" href="https://wa.me/01131705891" >
-        <img src="assets/whatsapp.svg" class="w3-image" style="width:300%" >
-    </a> whatsapp
+    <div class="container-fluid row">
+    <div class="col-4">
+    <p>Sucursal Olivos: </p>
+      <a  class="btn btn-outline-secondary" href="https://www.instagram.com/gt_automotores/" >
+          <img src="assets/instagram.svg" class="w3-image" style="width:300%" >
+      </a> 
+      <a  class="btn btn-outline-secondary" href="https://www.google.com/maps/place/Gt+automotores/@-34.5012624,-58.4827126,15z/data=!4m5!3m4!1s0x0:0x62e873047dfe4fdb!8m2!3d-34.5012534!4d-58.4826908" >
+          <img src="assets/pin-map-fill.svg" class="w3-image" style="width:300%" >
+      </a> 
+      <a  class="btn btn-outline-secondary" href="https://wa.me/message/LWIBE4FZVDAVN1" >
+          <img src="assets/whatsapp.svg" class="w3-image" style="width:300%" >
+      </a> 
+    </div>
+
+    <div class="col-4" style="background-color:#F7F5F1">
+
+    </div>
+
     
-    <div class="container">
-        <div class="row align-items-stretch justify-content-center no-gutters">
-        <div class="col-md-7">
-            <div class="form h-100 contact-wrap p-5">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nombre </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Apellido </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombreapellido@gmail.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Telefono </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1122334455">
-            </div>
-        </div>
-        </div>
+
+
+    <div class="col-4">
+      <p>Sucursal Liniers: </p>
+      <a  class="btn btn-outline-secondary" href="https://www.instagram.com/worldscar1/" >
+          <img src="assets/instagram.svg" class="w3-image" style="width:300%" >
+      </a> 
+      <a  class="btn btn-outline-secondary" href="https://www.google.com/maps/place/WORLD%E2%80%99S+CAR/@-34.6497494,-58.5124069,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcc854993095db:0xa9cb24d7886fbffc!8m2!3d-34.6498008!4d-58.5103171" >
+          <img src="assets/pin-map-fill.svg" class="w3-image" style="width:300%" >
+      </a> 
+      <a  class="btn btn-outline-secondary" href="https://wa.me/message/LWIBE4FZVDAVN1" >
+          <img src="assets/whatsapp.svg" class="w3-image" style="width:300%" >
+      </a>
     </div>
 </div>
     
@@ -298,7 +309,7 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Bienvenidos y muchas gracias por visitar nuestro sitio. <a href="https://vehiculos.mercadolibre.com.ar/_CustId_409359299" title="CATALOGO" target="_blank" class="w3-hover-text-green">CATALOGO</a></p>
 </footer>
 
 <script>
@@ -319,5 +330,6 @@ function openMenu(evt, menuName) {
 document.getElementById("myLink").click();
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
